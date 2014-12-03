@@ -1,0 +1,25 @@
+.main.jumbotron {
+    width: 100%;
+    z-index: -2;
+    position: relative;
+    overflow: hidden;
+}
+
+.preliminary-contact { margin-bottom: 50px; }
+.navbar { margin-bottom: 0; }
+
+.jumbotron .img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity ease-in 400ms;
+}
+
+.fade-in.in {
+    opacity: 10;
+}
