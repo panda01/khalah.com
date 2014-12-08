@@ -15,13 +15,6 @@
 }
 
 
-.fade-in {
-    opacity: 0;
-    transition: opacity ease-in 400ms;
-}
-.fade-in.in { opacity: 10; }
-
-
 #profile .bar { 
     background-color: #ddd;
     height: 4px;
@@ -43,8 +36,9 @@
     
 
 .cont > section {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .cont > section:nth-child(even) {
     background-color: #eee;
@@ -58,7 +52,6 @@
     background-color: #fff;
 }
 
-
 body {
-    padding-top: 50px;
+    overflow-x: hidden;
 }
