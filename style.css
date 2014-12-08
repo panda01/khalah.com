@@ -5,7 +5,6 @@
     overflow: hidden;
 }
 
-.preliminary-contact { margin-bottom: 50px; }
 .navbar { margin-bottom: 0; }
 
 .jumbotron .img {
@@ -15,11 +14,51 @@
     left: 0;
 }
 
+
 .fade-in {
     opacity: 0;
     transition: opacity ease-in 400ms;
 }
+.fade-in.in { opacity: 10; }
 
-.fade-in.in {
-    opacity: 10;
+
+#profile .bar { 
+    background-color: #ddd;
+    height: 4px;
+    margin-bottom: 5px;
+}
+#profile .bar.on { background-color: #333; }
+
+
+
+.skills .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.skills .col-xs-12,
+.skills .col-xs-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    
+
+.cont > section {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+.cont > section:nth-child(even) {
+    background-color: #eee;
+}
+
+#portfolio .testomonial {
+    overflow: hidden;
+}
+
+.navbar.navbar-fixed-top {
+    background-color: #fff;
+}
+
+
+body {
+    padding-top: 50px;
 }

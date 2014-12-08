@@ -1,13 +1,13 @@
 $(function() {
     var fullHeight = function() {
-        var pageHeight = $(document).innerHeight();
+        var pageHeight = $(window).innerHeight();
         $('.full-height').each(function(idx, el) {
             $(el).css('height', pageHeight + 'px');
         });
     }();
 
     function jumbotronImage() {
-        var $doc = $(document),
+        var $doc = $(window),
             $jumboImg = $('.main.img'),
             pageDimensions = {
                 height: $doc.innerHeight(),
