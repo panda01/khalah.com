@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" />
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css" />
         <link rel="stylesheet" href="style/font-awesome/css/font-awesome.css" />
@@ -13,6 +14,12 @@
         <title>Khalah</title>
     </head>
     <body>
+        <div id="loading-box">
+            <div class="text-center">
+                <img src="images/loading.gif" alt="Loading" />
+                <h5>Loading</h5>
+            </div>
+        </div>
         <!-- navbar -->
         <div class="navbar navbar-fixed-top hidden">
             <div class="container">
@@ -41,15 +48,15 @@
         <div class="jumbotron main full-height" id="jumbotron">
             <img src="images/1.jpg" class="main img" data-effect="fadeIn"/>
             <div class="container">
-                <h1 class="bold text-right" data-effect="fadeInDown">
-                    <b>Hi, I'm<br />Khalah Jones-Golden</b><br />
-                    <small>Human Web Engineer, Architect, Evangelist</small>
+                <h1 class="bold" data-effect="fadeInDown">
+                    <b>Hey, I'm<br />Khalah Jones - Golden</b><br />
+                    <small class="whatami">Human Web Engineer, Architect, Evangelist</small>
                 </h1>
             </div>
         </div>
         <!-- content -->
         <div class="cont">
-            <section class="preliminary-contact">
+            <section class="preliminary-contact" id="preliminary-contact">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4" data-effect="bounceInLeft">
@@ -62,7 +69,7 @@
                         </div>
                         <div class="col-md-4" data-effect="bounceInRight">
                             <div class="fa fa-2x fa-phone"></div>
-                            (347) 977-0736
+                            (347) 948-3966
                         </div>
                     </div>
                 </div>
@@ -147,7 +154,7 @@
                         <div class="col-md-6" data-effect='fadeInRight'>
                             <h4 class="text-uppercase">Who am I?</h4>
                             <p>I'm a JavaScript Engineer who has a love for design. I've worked with the best designers, programmers, and product people in the industry. I love making beautiful things, whether it be at a workbench or on a computer. I'm a mostly self taught engineer/architect, who got his software beginnings in Brooklyn Technical Highschool. I've been writing rich Web 2.0 Applications for 5 years, 2 of those as project lead.</p>
-                            <p>When I'm not making beautiful websites, I find myself cycling around, bouldering, and enjoying life</p>
+                            <p>When I'm not making beautiful websites, I find myself cycling around, bouldering, and enjoying life.</p>
                         </div>
                     </div>
                 </div>
@@ -179,38 +186,38 @@
                             <small>Most Recent Jobs</small>
                         </h2>
                         <p class="col-md-12" data-effect='fadeInDown'>I've worked with the best in the industry, and picked their brains to become a person's engineer for the web.</p>
-                        <div class="col-md-8" data-effect="bounceInLeft">
-                            <h3>Lead JavaScript Engineer / Architect</h3>
-                            <p>With LiquidNet I was able to truly explore, and improve on my user experience knowledge. I worked with the product manager on our project, to find a phenomal designer, and a feel for the new Angular Web 2.0 app. When we got a new fresh design style, and opinion, we worked together very closely, to create a beautiful finance app.</p>
-                            <p>They came up with the wants, and designs, and was design quality assurance.</p>
-                        </div>
-                        <div class="col-md-4" data-effect="bounceInDown">
-                            <h3>
+                        <div>
+                            <h3 class="col-md-8" data-effect="bounceInLeft">Lead JavaScript Engineer / Architect</h3>
+                            <h3 class="col-md-4" data-effect="bounceInDown">
                                 LiquidNet
                                 <small>Oct 2013 - Oct 2014</small>
                             </h3>
+                            <div class="col-md-8" data-effect="bounceInLeft">
+                                <p>With LiquidNet I was able to truly explore, and improve on my user experience knowledge. I worked with the product manager on our project, to find a phenomal designer, and a feel for the new Angular Web 2.0 app. When we got a new fresh design style, and opinion, we worked together very closely, to create a beautiful finance app.</p>
+                                <p>They came up with the wants, and designs, and was design quality assurance.</p>
+                            </div>
                         </div>
-                        <div class='col-md-8' data-effect="bounceInLeft">
-                            <h3>JavaScript Engineer / Architect</h3>
-                            <p>At Medialets I really aged my engineering, architecture, and project lead skills. I worked with some of the best JavaScript, and Scala engineers in the industry, and I was the lead contributor to BackBone - Marionette Web 2.0 project built from the ground up. I learned a ton including functional programming, and how to combine it with JavaScript, and imperative programming effective to create a beautiful Web 2.0 app inside and out.</p>
-                            <p>It is here that I truly expanded my mind, and abilities, to that of near mastery</p>
-                        </div>
-                        <div class='col-md-4' data-effect="bounceInRight">
-                            <h3>
+                        <div>
+                            <h3 class="col-md-8" data-effect="bounceInLeft">JavaScript Engineer / Architect</h3>
+                            <h3 class='col-md-4' data-effect="bounceInRight">
                                 Medialets
                                 <small>Dec 2012 - Nov 2013</small>
                             </h3>
+                            <div class='col-md-8' data-effect="bounceInLeft">
+                                <p>At Medialets I really aged my engineering, architecture, and project lead skills. I worked with some of the best JavaScript, and Scala engineers in the industry, and I was the lead contributor to BackBone - Marionette Web 2.0 project built from the ground up. I learned a ton including functional programming, and how to combine it with JavaScript, and imperative programming effective to create a beautiful Web 2.0 app inside and out.</p>
+                                <p>It is here that I truly expanded my mind, and abilities, to that of near mastery</p>
+                            </div>
                         </div>
-                        <div class='col-md-8' data-effect="bounceInLeft">
-                            <h3>Senior JavaScript Engineer / Architect</h3>
-                            <p>RetailMLS allowed me spread my wings and find my love for JavaScript and a beautiful interface. Here I worked with the technical director, and product director, to improve on our current design, by considering it more objectively, and studying user experience strategies, and best practices. I attended a lot of meetings, programming in the back and listening to the interesting and necessary dichtomy between the two.</p>
-                            <p>Here I got my first taste, and fell in love with the combination function and design.</p>
-                        </div>
-                        <div class='col-md-4' data-effect="bounceInUp">
-                            <h3>
+                        <div>
+                            <h3 class='col-md-8' data-effect="bounceInLeft">Senior JavaScript Engineer / Architect</h3>
+                            <h3 class='col-md-4' data-effect="bounceInUp">
                                 RetailMLS
                                 <small>Dec 2012 - Nov 2013</small>
                             </h3>
+                            <div class='col-md-8' data-effect="bounceInLeft">
+                                <p>RetailMLS allowed me to spread my wings and find my love for JavaScript and a beautiful interface. Here I worked with the technical director, and product director, to improve on our current design, by considering it more objectively, and studying user experience strategies, and best practices. I attended a lot of meetings, programming in the back and listening to the interesting and necessary dichtomy between the two.</p>
+                                <p>Here I got my first taste, and fell in love with the combination function and design.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -229,7 +236,7 @@
                             <div class="testomonial">
                                 <img class="img-thumbail img-responsive" src="images/paradine1.png" alt="Paradine Concur Federation App"/>
                                 <div class="text-center">
-                                    AngularJS / Node.js
+                                    AngularJS / Node.js&nbsp;<span class="small">(Under Construction)</span>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +245,7 @@
                             <div class="testomonial">
                                 <img class="img-thumbail img-responsive" src="images/acr1.png" alt="Amazing Credit Results App"/>
                                 <div class="text-center">
-                                    AngularJS / Node.js
+                                    AngularJS / Node.js&nbsp;<span class="small">(Under Construction)</span>
                                 </div>
                             </div>
                         </div>
@@ -247,7 +254,7 @@
                             <div class="testomonial">
                                 <img class="img-thumbail img-responsive" src="images/allnat1.png" alt="All Natural Music Blog and Website"/>
                                 <div class="text-center">
-                                    JavaScript / Wordpress
+                                    JavaScript / Wordpress&nbsp;<span class="small">(Under Construction)</span>
                                 </div>
                             </div>
                         </div>
@@ -261,10 +268,26 @@
                             <b>Contact</b>
                             <small>Drop me a line, and let's talk web.</small>
                         </h2>
-                        <div class='col-md-6' data-effect='fadeInDown'>
+                        <div class='col-md-12' data-effect='fadeInDown'>
+                            <p>Currently, I'm doing freelance work, and working on a few secret projects of my own from the comfort of a tropical island.</p>
                             <p>If you like what you see, or even if you have some questions about anything on the web, hit me up, and let's talk about it</p>
+                            <p>
+                                <a href="http://www.linkedin.com/pub/khalah-jones-golden/26/9a/b21">
+                                    <span class="fa fa-linkedin"></span>&nbsp;LinkedIn
+                                </a>&nbsp;
+                                <br />
+                                <a href="http://github.com/panda01">
+                                    <span class="fa fa-github"></span>&nbsp;GitHub
+                                </a>&nbsp;
+                                <br />
+                                <a href="mailto:khasan222@gmail.com">
+                                    <span class="fa fa-envelope"></span>&nbsp;khasan222@gmail.com
+                                </a>&nbsp;
+                            </p>
                         </div>
-                        <form class='col-md-6 form' data-effect='fadeInRight'>
+
+
+                        <!--<form class='col-md-6 form' data-effect='fadeInRight'>
                             <div class="form-group">
                                 <input type="text" name="name" placeholder="Name" class="form-control"/>
                             </div>
@@ -275,13 +298,20 @@
                                 <textarea name="msg" class="form-control" placeholder="Message" rows="5"></textarea>
                             </div>
                             <input type="button" value="Send Message" class="btn btn-success pull-right"/>
-                        </form>
+                        </form>-->
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <p class="col-md-12" data-effect="fadeInLeft"><span class="fa fa-heart"></span>&nbsp;Made with love in beautiful San Juan, Puerto Rico</p>
                     </div>
                 </div>
             </section>
         </div>
 
-        <script src="jquery/dist/jquery.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
